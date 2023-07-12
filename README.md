@@ -9,13 +9,13 @@ pip install -r requirements.txt
 # For `server.py`:
 
 1. import modules
-   ```python
+```python
 from concurrent import futures
 import logging
 import os
 import grpc
 from protos import hello_pb2, hello_pb2_grpc
-   ```
+```
 
 <br>
 
