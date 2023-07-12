@@ -2,11 +2,11 @@
 Connecting gRPC to Python in a simple way and building a server and client to send and receive responses
 <br>
 ## Implementation principles of the code
-1. first you need go to `requirements.txt` and install libraries, for install with cmd:
+# first you need go to `requirements.txt` and install libraries, for install with cmd:
 ```
 pip install -r requirements.txt
 ```
-2. For `server.py`:
+# For `server.py`:
 ### import modules
    ```python
 from concurrent import futures
@@ -34,7 +34,7 @@ def serve():
     server.wait_for_termination()
 ```
 
-3. for `client.py`:
+# for `client.py`:
 
 ### Import modules
 ```python
