@@ -6,6 +6,28 @@ first you need go to `requirements.txt` and install libraries, for install with 
 ```
 pip install -r requirements.txt
 ```
+
+# For Create Models on `protos/hello.proto` :
+
+```proto
+syntax = "proto3";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (StringResponse) {}
+}
+
+message HelloRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+message StringResponse {
+  string message = 1;
+}
+```
+
 # For `server.py`:
 
 1. import modules
