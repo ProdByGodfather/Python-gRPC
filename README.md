@@ -27,6 +27,11 @@ message StringResponse {
   string message = 1;
 }
 ```
+now we must create `pb2` & `rpc` files from this `.proto` file.
+write on cmd:
+```
+python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. hello.proto
+```
 
 # For `server.py`:
 
